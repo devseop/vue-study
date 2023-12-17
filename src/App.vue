@@ -1,9 +1,16 @@
 <script lang="ts" setup>
-import SignIn from './components/SignIn.vue'
+import NavBarView from './components/NavBar.vue';
 </script>
 
 <template>
-  <main><SignIn /></main>
+  <div id='app'>
+    <NavBarView />  
+    <router-view/>
+  </div>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+  body {
+    background-color: #23232C;
+  }
+</style>
